@@ -1,0 +1,121 @@
+.academic-date {
+  position: relative;
+  width: 1em;
+  height:  1em;
+  background-color: var(--third-color);
+  border-radius: 50%;
+  border: 5px solid var(--principal-color);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* ACADEMIC DATE BODY */
+
+.academic-date-body {
+  position: absolute;
+  top: -25px;
+  left: -200px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s;
+  width: fit-content;
+}
+
+.academic-date-body h5 {
+  font-size: 0.8em;
+  display: block;
+  color: var(--principal-color);
+}
+
+.academic-date-body p {
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 0.55em;
+  color: var(--principal-color);
+  width: fit-content;
+}
+
+/* SELECTED DATE */
+
+.academic-date.selected {
+  width: 2em;
+  height: 2em;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.academic-date-body.selected {
+  top: -5px;
+  transform: scale(1.2);
+}
+
+.academic-date:hover {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.academic-date.selected:hover {
+  width: 2em;
+  height: 2em;
+  animation: 2s pulse infinite;
+}
+
+.academic-date:hover > .academic-date-body {
+  top: -15px;
+}
+
+.academic-date:hover > .academic-date-body.selected {
+  top: -5px;
+}
+
+/* ANIMATIONS */
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .academic-date {
+    position: static;
+  }
+  .academic-date-body {
+    top: auto;
+    text-align: center;
+    min-width: 5em;
+  }
+  
+  .academic-date .academic-date-body {
+    display: none;
+  }
+  .academic-date.selected .academic-date-body  {
+    display: block;
+  }
+
+  .academic-date.selected {
+    width: 2em;
+    height: 2em;
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .academic-date-body.selected {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -1100%) scale(2);
+  }
+
+  .academic-date:hover > .academic-date-body {
+    pointer-events: none;
+  }
+  
+  .academic-date:hover > .academic-date-body.selected {
+    pointer-events: none;
+  }
+}

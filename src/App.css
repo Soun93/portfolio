@@ -1,0 +1,12 @@
+header {
+  position: relative;
+  display: flex;
+  margin-bottom: 50px;
+  align-items: center;
+  gap: 1em;
+}
+
+section {
+  margin-bottom: 5em;
+}
+

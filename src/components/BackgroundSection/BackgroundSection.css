@@ -1,0 +1,92 @@
+.background-container {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--third-color);
+  color: var(--principal-color);
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.background-container h3 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.background-body {
+  display: flex;
+  height: 100%;
+}
+
+/* LINEA DE TIEMPO */
+
+.time-line {
+  position: relative;
+  margin-left: 12em;
+  min-height: 500px;
+  max-width: 2px;
+  background-color: var(--principal-color) ;
+  display: flex;
+  flex-direction: column;
+  overflow: visible;
+}
+
+.time-line .academic-date-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/* DESCRIPCIÓN */
+
+.description {
+  position: relative;
+  padding: 2em;
+  overflow: hidden;
+}
+
+.description.animate {
+  animation: 2s entry-description;
+}
+
+@keyframes entry-description {
+  0% {
+    opacity: 0;
+    margin-left: 10em;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0em;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .background-body {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .time-line {
+    min-height: auto;
+    max-width: none;
+    margin-top: 5em;
+    margin-left: 0;
+    height: 2px;
+    width: 100%;
+    flex-direction: row;
+    overflow: visible;
+  }
+
+  .time-line .academic-date-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}

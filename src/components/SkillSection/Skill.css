@@ -1,0 +1,24 @@
+.skill-container {
+  width: 7em;
+  height: 7em;
+  padding: 0.5em;
+  background-color: var(--third-color);
+  color: var(--principal-color);
+  display: grid;
+  place-items: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+
+.skill-container span {
+  font-size: 1em;
+}
+
+.skill-container svg {
+  width: 40%;
+}
+
+.skill-container:hover {
+  width: 7.5em;
+  height: 7.5em;
+}

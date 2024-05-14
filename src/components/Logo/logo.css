@@ -1,0 +1,11 @@
+.logo-container {
+  height: 7.5em;
+  width: 8em;
+  background-color: white;
+  display: grid;
+  place-items: center;
+}
+
+.logo-container img {
+  max-width: 80%;
+}

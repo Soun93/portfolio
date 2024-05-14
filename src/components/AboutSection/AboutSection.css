@@ -1,0 +1,23 @@
+.about-container {
+  display: flex;
+  gap: 2em;
+}
+
+.about-container .about-title {
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-container .about-title span {
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+.about-body p {
+  font-weight: lighter;
+}
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,36 @@
+.skills-section h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+.skills-section-container {
+  padding: 2em;
+  height: fit-content;
+  -webkit-mask: 
+    linear-gradient(
+      90deg, 
+      transparent,
+      white 20%,
+      white 80%, 
+      transparent
+    );
+  mask: linear-gradient(
+    90deg, 
+    transparent,
+    white 20%,
+    white 80%, 
+    transparent
+  );
+  overflow: hidden;
+}
+.skill-wrapper {
+  display: flex;
+  gap: 2em;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 1em));
+  }
+}
