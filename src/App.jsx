@@ -5,6 +5,8 @@ import WelcomeSection from './components/WelcomeSection/WelcomeSection'
 import Nav from './components/Nav/Nav'
 import BackgroundSection from './components/BackgroundSection/BackgroundSection'
 import SkillSection from './components/SkillSection/SkillSection'
+import ProyectSection from './components/ProyectSection/ProyectSection'
+import Pagination from './components/CommonComponents/Pagination'
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
         <AboutSection />
         <BackgroundSection />
         <SkillSection />
+        <ProyectSection />
       </div>
     </>
   )

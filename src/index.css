@@ -45,7 +45,11 @@ body {
   background-color: var(--principal-color);
   margin-inline: 10%;
 }
-h3,h4, h5 {
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+}
+h3, h4, h5 {
   font-weight:700;
 }
 @media (max-width: 768px) {

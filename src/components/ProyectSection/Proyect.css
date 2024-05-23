@@ -1,0 +1,26 @@
+.proyect-container {
+  margin-block: 2rem;
+  background-color: var(--third-color);
+  padding: 1.5rem;
+  color: var(--principal-color);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.proyect-container .proyect-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proyect-button {
+  display: flex;
+  align-items: center;
+}
+
+.proyect-button {
+  cursor: pointer;
+}
